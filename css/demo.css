@@ -1,0 +1,9 @@
+#demo-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: url('../images/bg-space3.jpg');
+    background-size: cover;
+    color: transparent;
+    font-size: 80px;
+    font-weight: 700;
+}
