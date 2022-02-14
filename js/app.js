@@ -7,10 +7,10 @@ const divsAbout = document.querySelectorAll('.about-section');
 const divsGameplay = document.querySelectorAll('.gameplay-section');
 
 const isMobileResolution = window.matchMedia('(max-width: 500px)');
-const isTableResolution = window.matchMedia('(max-width: 1030px)');
+const isTableResolution = window.matchMedia('(max-width: 1300px)');
 
 let currentPage = 0;
-let currentTab = 'gameplay';
+let currentTab = 'about';
 let totalPages = 5;
 
 const init = () => {
@@ -82,7 +82,7 @@ const showContent = (pageToShow) => {
     } else {
         btnPrev.classList.add('hide');
     }
-    console.log("totalPages", totalPages);
+    //console.log("totalPages", totalPages);
 
     if (currentPage < totalPages - 1) {
         btnNext.classList.remove('hide');
@@ -94,7 +94,7 @@ const showContent = (pageToShow) => {
 }
 
 const showHideSections = (currentPage) => {
-    console.log("CurrentPage", currentPage);
+    //console.log("CurrentPage", currentPage);
 
     if (currentTab === "about") {
         divsAbout.forEach((div, i) => {
